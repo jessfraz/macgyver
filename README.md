@@ -70,7 +70,7 @@ Square root of 16 is 4.000000
 
 Yay it worked so in our `main.go` we ran:
 
-```golang
+```go
 func run(fun, arg string) {
     f := C.CString(fun)
     a := C.CString(arg)
