@@ -83,3 +83,8 @@ func main() {
 which passed `hello` and `jessie` to our `helloworld.c` module and
 `squareroot` and `16` to our `sqrt.c`module. Both modules had their
 symbols added to our final binary.
+
+If you are more curious checkout the `dlopen` man page,
+[linux.die.net/man/3/dlopen](http://linux.die.net/man/3/dlopen) and
+gcc link options
+[gcc.gnu.org/onlinedocs/gcc/Link-Options.html](https://gcc.gnu.org/onlinedocs/gcc/Link-Options.html).
