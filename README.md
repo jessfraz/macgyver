@@ -76,6 +76,8 @@ Yay it worked so in our `main.go` we ran:
 func run(fun, arg string) {
     f := C.CString(fun)
     a := C.CString(arg)
+    defer C.free(unsafe.Pointer(f))
+    defer C.free(unsafe.Pointer(a))
     C.Run(f, a)
 }
 
