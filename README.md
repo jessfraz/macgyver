@@ -46,6 +46,8 @@ Now we have a binary in our current directory named `macgyver`.
 
 Check that our symbols from our `src/*.c` files have been exported.
 
+We pass `-D` to `nm` for dynamic exports, and `-C` for name de-mangling.
+
 ```console
 $  nm macgyver -DC | grep hello
 0000000000454100 T hello
