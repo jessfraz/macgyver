@@ -10,7 +10,7 @@ Okay so `ls src/` and you can see we have 2 C files, `sqrt.c` and `helloworld.c`
 These are the functions we will call the symbols for in our `main.go`.
 
 Running `make` in the directory creates our object files for the C code that we
-will like into our go binary.
+will link into our go binary.
 
 In `main.go` the most important thing to note is:
 
