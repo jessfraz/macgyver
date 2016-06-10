@@ -60,7 +60,7 @@ This works because we added `-Wl,--export-dynamic` to our `-extldflags` for `go
 build`. The `-Wl,--whole-archive` flag makes sure that all our symbols get
 exported into the final binary, because typically `gcc` (or any compiler) will
 only add in the things we need, but since they aren't getting called directly
-from our code, the compilier does not know we need them.
+from our code, the compiler does not know we need them.
 
 **Let's run it**
 
